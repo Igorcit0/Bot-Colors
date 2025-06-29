@@ -1,0 +1,46 @@
+Discord Role Color Changer Bot
+Este es un bot simple de Discord que cambia automáticamente el color de un rol específico a un color aleatorio cada pocos segundos. Es ideal para darle un toque dinámico y visual a tus servidores de Discord.
+
+Características
+Cambio de Color Aleatorio: Genera y aplica un color aleatorio al rol configurado.
+
+Actualización Continua: El color del rol se actualiza cada pocos segundos (configurable).
+
+Configuración Segura: Utiliza variables de entorno (.env) para mantener tu información sensible protegida.
+
+Configuración y Uso
+Sigue estos pasos para poner en marcha tu bot:
+
+1. Prepara tu Entorno
+Primero, clona este repositorio en tu máquina local y navega hasta su directorio.
+
+Luego, instala las librerías necesarias. Este bot requiere discord.py para interactuar con Discord y python-dotenv para manejar las variables de entorno. Puedes instalarlas fácilmente.
+
+2. Obtén tus Credenciales de Discord
+Necesitarás tres elementos clave de Discord:
+
+Token de Bot: Este es el identificador único de tu bot, que le permite conectarse a Discord. Lo obtienes desde el Portal de Desarrolladores de Discord al crear o seleccionar tu aplicación de bot.
+
+ID de Servidor (Guild ID): Es el identificador numérico de tu servidor de Discord donde quieres que el bot opere. Asegúrate de tener el "Modo desarrollador" activado en tus ajustes de usuario de Discord para poder copiarlo haciendo clic derecho en el servidor.
+
+ID de Rol (Role ID): Es el identificador numérico del rol específico cuyo color deseas que el bot cambie. También lo copias con el "Modo desarrollador" activado, haciendo clic derecho sobre el rol en los ajustes de tu servidor.
+
+3. Configura tus Variables de Entorno
+Para mantener tu información sensible segura, el bot utiliza un archivo de variables de entorno. En la misma carpeta donde tienes los archivos del bot, crea un nuevo archivo llamado .env (asegúrate de que no tenga ninguna extensión adicional).
+
+Dentro de este archivo, añadirás tus credenciales obtenidas en el paso anterior, siguiendo un formato específico.
+
+Es crucial que nunca compartas ni subas este archivo .env a repositorios públicos como GitHub. Deberías añadir .env a tu archivo .gitignore para asegurarte de que esto no ocurra accidentalmente.
+
+4. Ejecuta el Bot
+Una vez que hayas configurado correctamente el archivo .env con tus credenciales, puedes iniciar el bot desde tu terminal.
+
+Asegúrate de que el bot tenga los permisos necesarios para gestionar roles (manage_roles) en tu servidor de Discord, de lo contrario no podrá cambiar el color del rol.
+
+Notas Importantes
+Frecuencia de Cambio: La velocidad a la que el color del rol cambia es configurable dentro del código del bot. Puedes ajustarla para que se adapte mejor a tus preferencias.
+
+Manejo de Errores: El bot incluye un manejo básico de errores para informarte si no puede encontrar el servidor o el rol especificado, o si ocurre algún otro problema durante el proceso de cambio de color.
+
+Contribuciones
+¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar el bot o encuentras algún problema, no dudes en abrir un issue o enviar un pull request.
