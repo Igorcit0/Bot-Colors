@@ -1,4 +1,3 @@
-Discord Role Color Changer Bot
 Este es un bot simple de Discord que cambia automáticamente el color de un rol específico a un color aleatorio cada pocos segundos. Es ideal para darle un toque dinámico y visual a tus servidores de Discord.
 
 Características
@@ -8,13 +7,19 @@ Actualización Continua: El color del rol se actualiza cada pocos segundos (conf
 
 Configuración Segura: Utiliza variables de entorno (.env) para mantener tu información sensible protegida.
 
+Fácil Instalación: Incluye un archivo de requisitos para una instalación sencilla de las dependencias.
+
 Configuración y Uso
 Sigue estos pasos para poner en marcha tu bot:
 
 1. Prepara tu Entorno
 Primero, clona este repositorio en tu máquina local y navega hasta su directorio.
 
-Luego, instala las librerías necesarias. Este bot requiere discord.py para interactuar con Discord y python-dotenv para manejar las variables de entorno. Puedes instalarlas fácilmente.
+Luego, instala las librerías necesarias. Este bot requiere discord.py para interactuar con Discord y python-dotenv para manejar las variables de entorno. Todas las dependencias están listadas en el archivo requirements.txt. Puedes instalarlas fácilmente ejecutando el siguiente comando en tu terminal, desde la carpeta del proyecto:
+
+Bash
+
+pip install -r requirements.txt
 
 2. Obtén tus Credenciales de Discord
 Necesitarás tres elementos clave de Discord:
